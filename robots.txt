@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://vishwatejapuppireddy.github.io/sitemap.xml
