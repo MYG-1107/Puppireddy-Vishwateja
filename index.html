@@ -7,7 +7,7 @@
   <!-- SEO & Meta Tags -->
   <title>Puppireddy Vishwateja | Full-Stack Developer & AI Engineer</title>
   <meta name="title" content="Puppireddy Vishwateja | Full-Stack Developer & AI Engineer">
-  <meta name="description" content="Official portfolio of Puppireddy Vishwateja. Full-Stack Developer and AI/Computer Vision enthusiast specializing in ASP.NET Core, Python, and Cloud AI services.">
+  <meta name="description" content="Official portfolio of Puppireddy Vishwateja. Full-Stack Developer and AI/Computer Vision specialist proficient in ASP.NET Core, Python, C#, and Azure Cloud AI.">
   <meta name="keywords" content="Puppireddy Vishwateja, Full Stack Developer, AI Engineer, Computer Vision, Azure Custom Vision, ASP.NET Core, Python Developer, Portfolio">
   <meta name="author" content="Puppireddy Vishwateja">
   <meta name="robots" content="index, follow">
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vishwatejapuppireddy.github.io/">
   <meta property="og:title" content="Puppireddy Vishwateja | Full-Stack Developer & AI Engineer">
-  <meta property="og:description" content="Full-Stack Web Engineering, ASP.NET Core Web APIs, Computer Vision, and Cloud AI deployment. View engineering projects and qualifications.">
+  <meta property="og:description" content="Full-Stack Web Engineering, ASP.NET Core Web APIs, Computer Vision, and Cloud AI deployment.">
   <meta property="og:image" content="https://vishwatejapuppireddy.github.io/assets/images/og-image.png">
 
   <!-- Stylesheet -->
@@ -51,10 +51,21 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Top Announcement Bar (NAV.no Style) -->
+  <div class="gov-top-bar">
+    <div class="container gov-top-container">
+      <span class="gov-tag">Official Portfolio</span>
+      <span class="gov-status">Available for Full-Stack &amp; AI Engineering Roles</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
   <header class="header">
     <nav class="nav-container" aria-label="Main Navigation">
-      <a href="#hero" class="logo">P. Vishwateja<span class="dot">.</span></a>
+      <a href="#hero" class="logo">
+        <span class="logo-text">P. Vishwateja</span>
+        <span class="logo-sub">Full-Stack &amp; AI</span>
+      </a>
       <ul class="nav-menu" id="nav-menu">
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -64,133 +75,121 @@
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Light/Dark Theme">🌙</button>
-        <button id="menu-toggle" class="menu-btn" aria-label="Toggle Navigation Menu">☰</button>
+        <button id="theme-toggle" class="btn-gov-toggle" aria-label="Toggle Mode">
+          <span id="theme-text">Dark Mode</span>
+        </button>
+        <button id="menu-toggle" class="btn-gov-toggle menu-btn" aria-label="Toggle Menu">Menu</button>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero Section (NAV.no Banner Style) -->
     <section id="hero" class="hero-section">
-      <div class="container hero-container">
-        <div class="status-badge">
-          <span class="status-dot"></span> Available for Full-Stack & AI Engineering Opportunities
-        </div>
-        <h1 class="hero-title">Puppireddy Vishwateja</h1>
-        <p class="hero-subtitle">Full-Stack Developer & AI / Computer Vision Specialist</p>
-        <p class="hero-bio">
-          Building high-performance backend Web APIs, scalable client-side web architectures, and cloud-deployed Computer Vision models. Proficient across C#, Python, JavaScript, and Microsoft Azure.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Hire / Contact Me</a>
-          <a href="#projects" class="btn btn-secondary">View Work</a>
-          <button id="export-resume-btn" class="btn btn-outline">Download Profile (.csv)</button>
+      <div class="container">
+        <div class="hero-box">
+          <h1 class="hero-title">Puppireddy Vishwateja</h1>
+          <p class="hero-subtitle">Full-Stack Developer &amp; AI / Computer Vision Enthusiast</p>
+          <p class="hero-description">
+            Driven AI and Computer Vision enthusiast with hands-on experience building intelligent systems. Proficient in Python, C#, JavaScript, ASP.NET Core, and cloud machine learning frameworks with a strong focus on scalable AI and web engineering solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Contact Engineering Profile</a>
+            <a href="#projects" class="btn btn-secondary">Explore Projects</a>
+            <button id="export-resume-btn" class="btn btn-outline">Export Profile (.csv)</button>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Professional Summary -->
     <section id="about" class="section">
       <div class="container">
         <h2 class="section-title">Professional Summary</h2>
-        <div class="card about-card">
-          <p>
-            Driven AI and Computer Vision enthusiast with hands-on experience engineering intelligent, scalable systems. Proven track record in developing enterprise backend web APIs (ASP.NET Core Minimal APIs), cloud AI integration (Azure Custom Vision), client-side optimization algorithms, and modern frontend interfaces. Eager to contribute to scalable AI and data projects within global software teams.
+        <div class="nav-card">
+          <p class="card-text">
+            Full-Stack Web Engineer with hands-on experience in building ASP.NET Controller-based Web APIs, Minimal APIs, MongoDB integrations, and client-side optimization frameworks[cite: 1]. Experienced in deploying production-ready Computer Vision models on Microsoft Azure and engineering client-side reconciliation platforms with zero-telemetry data privacy[cite: 1].
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section bg-alt">
+    <!-- Work Experience -->
+    <section id="experience" class="section bg-subtle">
       <div class="container">
         <h2 class="section-title">Work Experience</h2>
-        <div class="experience-list">
-          <article class="card experience-card">
-            <header class="exp-header">
-              <div>
-                <h3 class="exp-role">Full Stack Developer</h3>
-                <div class="exp-company">SITER Academy, Norway</div>
-              </div>
-              <div class="exp-date">April 2024 – Present</div>
-            </header>
-            <ul class="exp-bullets">
-              <li>Architected and implemented ASP.NET Controller-based Web APIs and Minimal APIs for EJITE (<a href="https://ejite.no" target="_blank" rel="noopener">ejite.no</a>) platform.</li>
-              <li>Integrated Swashbuckle (Swagger/OpenAPI) for interactive API documentation and testing standards.</li>
-              <li>Developed modular JavaScript interfaces and managed server-side application routines.</li>
-              <li>Ensured reliable backend integration and document query optimization with MongoDB.</li>
-            </ul>
-          </article>
+        <div class="nav-card card-accent-left">
+          <div class="card-header-flex">
+            <div>
+              <h3 class="card-heading">Full Stack Developer</h3>
+              <div class="card-subheading">SITER Academy, Norway</div>
+            </div>
+            <span class="date-badge">April 2024 – Present</span>
+          </div>
+          <ul class="nav-list">
+            <li>Responsible for developing EJITE web platforms (ejite.no) and managing server-side instructions[cite: 1].</li>
+            <li>Engineered ASP.NET Controller-based Web APIs and Minimal APIs integrated with MongoDB backend services[cite: 1].</li>
+            <li>Integrated Swashbuckle for OpenAPI documentation and interactive endpoint testing[cite: 1].</li>
+            <li>Developed front-end web interfaces using Vanilla JavaScript and modern CSS standards[cite: 1].</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Featured Engineering Projects -->
     <section id="projects" class="section">
       <div class="container">
-        <h2 class="section-title">Featured Engineering Projects</h2>
-        <div class="projects-grid">
+        <h2 class="section-title">Engineering Projects</h2>
+        <div class="grid-layout grid-3">
           
           <!-- Project 1 -->
-          <article class="card project-card">
-            <div class="project-header">
-              <h3 class="project-title">Bachelors Finance Manager</h3>
-              <span class="project-badge">Web Application</span>
-            </div>
-            <p class="project-desc">
-              Architected a client-side financial reconciliation web platform for shared expenses. Implemented a <strong>Greedy Debt Settlement Algorithm</strong> in Vanilla JS, reducing $O(N^2)$ transaction complexity to $O(N)$ with cent-accurate precision. Built an A4 PDF export engine using native CSS Paged Media.
+          <article class="nav-card card-accent-top">
+            <div class="project-tag">Web Application</div>
+            <h3 class="card-heading">Bachelors Finance Manager</h3>
+            <p class="card-text">
+              Architected a client-side financial reconciliation web platform for university students and flatmates to streamline recurring shared expenses[cite: 1].
             </p>
-            <div class="tag-cloud">
-              <span class="tag">Vanilla JavaScript</span>
-              <span class="tag">Greedy Algorithm</span>
-              <span class="tag">CSS Paged Media</span>
-              <span class="tag">LocalStorage</span>
-              <span class="tag">GitHub Pages</span>
-            </div>
-            <div class="project-footer">
-              <a href="#" class="project-link" target="_blank" rel="noopener">Live Demo ↗</a>
+            <ul class="nav-list list-compact">
+              <li>Engineered a Greedy Debt Settlement Algorithm in JavaScript reducing liabilities from $O(N^2)$ complex transactions to an $O(N)$ minimum-cash-flow sequence[cite: 1].</li>
+              <li>Implemented an A4 PDF/Print Export Engine using native CSS Paged Media (@media print)[cite: 1].</li>
+              <li>Designed a high-contrast accessible UI adhering to Scandinavian government design guidelines (NAV.no and UDI.no)[cite: 1].</li>
+              <li>Utilized LocalStorage API for zero-telemetry data privacy and deployed via GitHub Pages[cite: 1].</li>
+            </ul>
+            <div class="card-footer-action">
+              <a href="#" class="nav-btn-link" target="_blank" rel="noopener">Access Live Demo &rarr;</a>
             </div>
           </article>
 
           <!-- Project 2 -->
-          <article class="card project-card">
-            <div class="project-header">
-              <h3 class="project-title">AI Model for Indian Dance Classification</h3>
-              <span class="project-badge">Computer Vision</span>
-            </div>
-            <p class="project-desc">
-              Production-ready Computer Vision solution classifying 8 classical Indian dance forms using Microsoft Azure Custom Vision API. Deployed as a real-time web application with Python and Streamlit Cloud.
+          <article class="nav-card card-accent-top">
+            <div class="project-tag">Computer Vision</div>
+            <h3 class="card-heading">AI Model for Indian Dance Classification</h3>
+            <p class="card-text">
+              A fully functional computer vision classification model built with Microsoft Azure Custom Vision that accurately classifies 8 classical Indian dance forms[cite: 1].
             </p>
-            <div class="tag-cloud">
-              <span class="tag">Azure Custom Vision</span>
-              <span class="tag">Python</span>
-              <span class="tag">Streamlit</span>
-              <span class="tag">REST APIs</span>
-              <span class="tag">Pillow / Requests</span>
-            </div>
-            <div class="project-footer">
-              <a href="#" class="project-link" target="_blank" rel="noopener">Access Documentation ↗</a>
+            <ul class="nav-list list-compact">
+              <li>Trained, fine-tuned, and deployed prediction endpoints using Azure AI Services[cite: 1].</li>
+              <li>Built real-time interactive web application using Python, Streamlit, Pillow, and Requests[cite: 1].</li>
+              <li>Deployed via Streamlit Cloud integrated with GitHub source control[cite: 1].</li>
+            </ul>
+            <div class="card-footer-action">
+              <a href="#" class="nav-btn-link" target="_blank" rel="noopener">View Documentation &rarr;</a>
             </div>
           </article>
 
           <!-- Project 3 -->
-          <article class="card project-card">
-            <div class="project-header">
-              <h3 class="project-title">Python Terminal Based Games</h3>
-              <span class="project-badge">CLI Software</span>
-            </div>
-            <p class="project-desc">
-              Interactive terminal applications designed to teach computer science students terminal keystroke navigation, shortcut executions, file persistence, and CRUD (Create, Read, Update, Delete) data operations.
+          <article class="nav-card card-accent-top">
+            <div class="project-tag">CLI Software</div>
+            <h3 class="card-heading">Python Terminal Based Games</h3>
+            <p class="card-text">
+              Interactive terminal applications created for students to master terminal keyboard commands, functions, and file persistence operations[cite: 1].
             </p>
-            <div class="tag-cloud">
-              <span class="tag">Python</span>
-              <span class="tag">CLI Architecture</span>
-              <span class="tag">Data Structures</span>
-              <span class="tag">File I/O</span>
-            </div>
-            <div class="project-footer">
-              <a href="#" class="project-link" target="_blank" rel="noopener">Access Web ↗</a>
+            <ul class="nav-list list-compact">
+              <li>Implemented keyboard event handlers for shortcut command execution[cite: 1].</li>
+              <li>Engineered custom file routines for Save, Update, Load, Create, Delete, and Retrieve[cite: 1].</li>
+            </ul>
+            <div class="card-footer-action">
+              <a href="#" class="nav-btn-link" target="_blank" rel="noopener">Access Web Application &rarr;</a>
             </div>
           </article>
 
@@ -198,113 +197,110 @@
       </div>
     </section>
 
-    <!-- Comprehensive Skills Section -->
-    <section id="skills" class="section bg-alt">
+    <!-- Complete Skills Matrix (From Resume) -->
+    <section id="skills" class="section bg-subtle">
       <div class="container">
-        <h2 class="section-title">Technical Skills & Expertise</h2>
-        <div class="skills-grid">
+        <h2 class="section-title">Technical Competencies &amp; Skills</h2>
+        <div class="grid-layout grid-3">
           
-          <div class="card skill-card">
-            <h3 class="skill-category">Programming Languages</h3>
-            <div class="tag-cloud">
-              <span class="tag tag-highlight">Python</span>
-              <span class="tag tag-highlight">JavaScript</span>
-              <span class="tag tag-highlight">C#</span>
-              <span class="tag">HTML5</span>
-              <span class="tag">CSS3</span>
+          <div class="nav-card">
+            <h3 class="skill-group-title">Programming Languages</h3>
+            <div class="pill-container">
+              <span class="nav-pill pill-bold">Python</span>
+              <span class="nav-pill pill-bold">JavaScript</span>
+              <span class="nav-pill pill-bold">C#</span>
             </div>
           </div>
 
-          <div class="card skill-card">
-            <h3 class="skill-category">Software Development</h3>
-            <div class="tag-cloud">
-              <span class="tag">Full-Stack Development</span>
-              <span class="tag">REST APIs</span>
-              <span class="tag">Web API Development</span>
-              <span class="tag">Minimal APIs</span>
-              <span class="tag">Backend Development</span>
-              <span class="tag">Frontend Development</span>
-              <span class="tag">API Integration</span>
-              <span class="tag">Server-Side Development</span>
+          <div class="nav-card">
+            <h3 class="skill-group-title">Software Development</h3>
+            <div class="pill-container">
+              <span class="nav-pill">Full-Stack Development</span>
+              <span class="nav-pill">REST APIs</span>
+              <span class="nav-pill">Web API Development</span>
+              <span class="nav-pill">Minimal APIs</span>
+              <span class="nav-pill">Backend Development</span>
+              <span class="nav-pill">Frontend Development</span>
+              <span class="nav-pill">API Integration</span>
+              <span class="nav-pill">Server-Side Development</span>
             </div>
           </div>
 
-          <div class="card skill-card">
-            <h3 class="skill-category">Frameworks & Libraries</h3>
-            <div class="tag-cloud">
-              <span class="tag tag-highlight">ASP.NET Core</span>
-              <span class="tag">Streamlit</span>
-              <span class="tag">Vanilla JavaScript</span>
-              <span class="tag">Swashbuckle</span>
-              <span class="tag">Pillow</span>
-              <span class="tag">Requests</span>
+          <div class="nav-card">
+            <h3 class="skill-group-title">Frameworks &amp; Libraries</h3>
+            <div class="pill-container">
+              <span class="nav-pill pill-bold">ASP.NET Core</span>
+              <span class="nav-pill">Streamlit</span>
+              <span class="nav-pill">Vanilla JavaScript</span>
+              <span class="nav-pill">HTML5</span>
+              <span class="nav-pill">CSS3</span>
             </div>
           </div>
 
-          <div class="card skill-card">
-            <h3 class="skill-category">AI & Machine Learning</h3>
-            <div class="tag-cloud">
-              <span class="tag tag-highlight">Machine Learning</span>
-              <span class="tag tag-highlight">Computer Vision</span>
-              <span class="tag">Image Classification</span>
-              <span class="tag">Model Training</span>
-              <span class="tag">Model Fine-Tuning</span>
-              <span class="tag">AI Model Deployment</span>
+          <div class="nav-card">
+            <h3 class="skill-group-title">AI &amp; Machine Learning</h3>
+            <div class="pill-container">
+              <span class="nav-pill">Machine Learning</span>
+              <span class="nav-pill pill-bold">Computer Vision</span>
+              <span class="nav-pill">Image Classification</span>
+              <span class="nav-pill">Model Training</span>
+              <span class="nav-pill">Model Fine-Tuning</span>
+              <span class="nav-pill">AI Model Deployment</span>
             </div>
           </div>
 
-          <div class="card skill-card">
-            <h3 class="skill-category">Cloud & AI Services</h3>
-            <div class="tag-cloud">
-              <span class="tag tag-highlight">Microsoft Azure</span>
-              <span class="tag">Azure AI Services</span>
-              <span class="tag">Azure Custom Vision</span>
-              <span class="tag">Cloud API Integration</span>
-              <span class="tag">Prediction Endpoints</span>
+          <div class="nav-card">
+            <h3 class="skill-group-title">Cloud &amp; AI Services</h3>
+            <div class="pill-container">
+              <span class="nav-pill pill-bold">Microsoft Azure</span>
+              <span class="nav-pill">Azure AI Services</span>
+              <span class="nav-pill">Azure Custom Vision</span>
+              <span class="nav-pill">Cloud API Integration</span>
+              <span class="nav-pill">Prediction APIs</span>
             </div>
           </div>
 
-          <div class="card skill-card">
-            <h3 class="skill-category">Databases & Storage</h3>
-            <div class="tag-cloud">
-              <span class="tag tag-highlight">MongoDB</span>
-              <span class="tag">LocalStorage</span>
-              <span class="tag">JSON/NoSQL Storage</span>
+          <div class="nav-card">
+            <h3 class="skill-group-title">Databases &amp; Storage</h3>
+            <div class="pill-container">
+              <span class="nav-pill pill-bold">MongoDB</span>
+              <span class="nav-pill">LocalStorage</span>
             </div>
           </div>
 
-          <div class="card skill-card">
-            <h3 class="skill-category">Web Technologies</h3>
-            <div class="tag-cloud">
-              <span class="tag">RESTful APIs</span>
-              <span class="tag">Swagger / OpenAPI</span>
-              <span class="tag">Responsive Web Design</span>
-              <span class="tag">CSS Paged Media</span>
-              <span class="tag">GitHub Pages</span>
+          <div class="nav-card">
+            <h3 class="skill-group-title">Web Technologies</h3>
+            <div class="pill-container">
+              <span class="nav-pill">RESTful APIs</span>
+              <span class="nav-pill">Swagger / OpenAPI</span>
+              <span class="nav-pill">Swashbuckle</span>
+              <span class="nav-pill">Responsive Web Development</span>
+              <span class="nav-pill">CSS Paged Media</span>
+              <span class="nav-pill">GitHub Pages</span>
             </div>
           </div>
 
-          <div class="card skill-card">
-            <h3 class="skill-category">Tools & Environments</h3>
-            <div class="tag-cloud">
-              <span class="tag">Git</span>
-              <span class="tag">GitHub</span>
-              <span class="tag">PyCharm</span>
-              <span class="tag">Visual Studio</span>
-              <span class="tag">API Documentation</span>
-              <span class="tag">Continuous Deployment</span>
+          <div class="nav-card">
+            <h3 class="skill-group-title">Tools &amp; Environment</h3>
+            <div class="pill-container">
+              <span class="nav-pill">Git</span>
+              <span class="nav-pill">GitHub</span>
+              <span class="nav-pill">PyCharm</span>
+              <span class="nav-pill">Visual Studio</span>
+              <span class="nav-pill">API Documentation</span>
+              <span class="nav-pill">Continuous Deployment</span>
             </div>
           </div>
 
-          <div class="card skill-card">
-            <h3 class="skill-category">Core Engineering Concepts</h3>
-            <div class="tag-cloud">
-              <span class="tag">Object-Oriented Programming (OOP)</span>
-              <span class="tag">Algorithms & Data Structures</span>
-              <span class="tag">Greedy Algorithms</span>
-              <span class="tag">Debt Settlement Algorithms</span>
-              <span class="tag">Client-Side Architecture</span>
-              <span class="tag">Software Deployment</span>
+          <div class="nav-card">
+            <h3 class="skill-group-title">Core Engineering Concepts</h3>
+            <div class="pill-container">
+              <span class="nav-pill">Object-Oriented Programming</span>
+              <span class="nav-pill">Algorithms &amp; Data Structures</span>
+              <span class="nav-pill">Greedy Algorithms</span>
+              <span class="nav-pill">Debt Settlement Algorithms</span>
+              <span class="nav-pill">Client-Side Architecture</span>
+              <span class="nav-pill">Software Deployment</span>
             </div>
           </div>
 
@@ -312,43 +308,46 @@
       </div>
     </section>
 
-    <!-- Education & Certifications Section -->
+    <!-- Education, Certifications & Honors -->
     <section id="education" class="section">
       <div class="container">
-        <h2 class="section-title">Education & Certifications</h2>
-        <div class="two-column-grid">
+        <h2 class="section-title">Education &amp; Credentials</h2>
+        <div class="grid-layout grid-2">
           
-          <!-- Education Column -->
           <div>
-            <h3 class="sub-heading">Academic Education</h3>
-            <div class="card edu-card">
-              <div class="edu-title">B.Tech - CSE (AI & ML)</div>
-              <div class="edu-institution">Vaagdevi College of Engineering</div>
-              <div class="edu-meta"><strong>Grade:</strong> 9.2 CGPA | <strong>Graduation Year:</strong> 2027</div>
+            <h3 class="sub-title">Education</h3>
+            <div class="nav-card card-accent-left mb-1">
+              <h4 class="card-heading">B.Tech - CSE (AI &amp; ML)</h4>
+              <div class="card-subheading">Vaagdevi College of Engineering</div>
+              <p class="meta-info"><strong>Score:</strong> 9.2 CGPA | <strong>Passing Year:</strong> 2027</p>
             </div>
-            <div class="card edu-card">
-              <div class="edu-title">PCM (Class 12)</div>
-              <div class="edu-institution">Sri Shivani Jr. College</div>
-              <div class="edu-meta"><strong>Score:</strong> 986 / 1000 | <strong>Year:</strong> 2023</div>
+            <div class="nav-card card-accent-left mb-1">
+              <h4 class="card-heading">Intermediate (PCM)</h4>
+              <div class="card-subheading">Sri Shivani Jr. College</div>
+              <p class="meta-info"><strong>Score:</strong> 986 / 1000 | <strong>Passing Year:</strong> 2023</p>
             </div>
-            <div class="card edu-card">
-              <div class="edu-title">SSC (Class 10)</div>
-              <div class="edu-institution">Green Wood Concept School</div>
-              <div class="edu-meta"><strong>Grade:</strong> 10.0 CGPA | <strong>Year:</strong> 2021</div>
+            <div class="nav-card card-accent-left">
+              <h4 class="card-heading">SSC (Class 10)</h4>
+              <div class="card-subheading">Green Wood Concept School</div>
+              <p class="meta-info"><strong>Score:</strong> 10.0 CGPA | <strong>Passing Year:</strong> 2021</p>
             </div>
           </div>
 
-          <!-- Certifications & Honors Column -->
           <div>
-            <h3 class="sub-heading">Certifications & Honors</h3>
-            <div class="card cert-card">
-              <ul class="clean-list">
+            <h3 class="sub-title">Certifications &amp; Honors</h3>
+            <div class="nav-card">
+              <h4 class="card-heading">Professional Certifications</h4>
+              <ul class="nav-list mb-2">
                 <li><strong>SITER Certified Generative AI Engineer</strong> (April 2026)</li>
                 <li><strong>SITER Certified AI Full Stack Engineer</strong> (March 2025)</li>
                 <li><strong>SITER Certified Machine Learning Engineer</strong> (December 2024)</li>
-                <li><strong>Infosys Certificate of Appreciation</strong> – Pragati: Path to Future (Cohort 6)</li>
-                <li><strong>Certificate of Appreciation (SITER Academy)</strong> – Master of Ceremony at Mega Symposium 2026</li>
-                <li><strong>Certificate of Appreciation (SITER Academy)</strong> – Master of Ceremony at ICETBDT Goa Conference 2026</li>
+              </ul>
+
+              <h4 class="card-heading">Honors &amp; Awards</h4>
+              <ul class="nav-list">
+                <li>Certificate of Appreciation (SITER Academy, Norge) - Master of Ceremony during Mega Symposium 2026</li>
+                <li>Certificate of Appreciation (SITER Academy, Norge) - Master of Ceremony at ICETBDT Goa Conference 2026</li>
+                <li>Certificate of Appreciation (Infosys) - Pragati: Path to Future (Cohort 6)</li>
               </ul>
             </div>
           </div>
@@ -357,40 +356,48 @@
       </div>
     </section>
 
-    <!-- Direct Contact Section (No Form) -->
-    <section id="contact" class="section bg-alt">
-      <div class="container text-center">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="contact-lead">
-          I am actively seeking full-time and project opportunities in Full-Stack Web Development, ASP.NET API Development, and AI Engineering. Reach out directly via email or phone.
+    <!-- Clean Direct Contact Cards (NAV.no Style) -->
+    <section id="contact" class="section bg-subtle">
+      <div class="container">
+        <h2 class="section-title text-center">Contact Information</h2>
+        <p class="section-lead text-center">
+          Contact Puppireddy Vishwateja directly for software development, full-stack API integration, or AI engineering inquiries.
         </p>
-        
-        <div class="contact-cards-container">
-          <a href="mailto:vishwatejapuppireddy@gmail.com" class="card contact-action-card">
-            <div class="contact-icon">✉️</div>
-            <div class="contact-label">Email</div>
-            <div class="contact-value">vishwatejapuppireddy@gmail.com</div>
+
+        <div class="grid-layout grid-3 max-width-center">
+          
+          <a href="mailto:vishwatejapuppireddy@gmail.com" class="nav-card contact-card">
+            <div class="contact-svg-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </div>
+            <div class="contact-card-title">Email</div>
+            <div class="contact-card-value">vishwatejapuppireddy@gmail.com</div>
           </a>
 
-          <a href="tel:+919346213690" class="card contact-action-card">
-            <div class="contact-icon">📞</div>
-            <div class="contact-label">Phone</div>
-            <div class="contact-value">+91 93462 13690</div>
+          <a href="tel:+919346213690" class="nav-card contact-card">
+            <div class="contact-svg-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-card-title">Telephone</div>
+            <div class="contact-card-value">+91 93462 13690</div>
           </a>
 
-          <a href="https://github.com/vishwatejapuppireddy" target="_blank" rel="noopener" class="card contact-action-card">
-            <div class="contact-icon">💻</div>
-            <div class="contact-label">GitHub</div>
-            <div class="contact-value">github.com/vishwatejapuppireddy</div>
+          <a href="https://github.com/vishwatejapuppireddy" target="_blank" rel="noopener" class="nav-card contact-card">
+            <div class="contact-svg-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </div>
+            <div class="contact-card-title">GitHub Profile</div>
+            <div class="contact-card-value">github.com/vishwatejapuppireddy</div>
           </a>
+
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-content">
-      <p>&copy; 2026 Puppireddy Vishwateja. Built for high performance & search visibility.</p>
+    <div class="container footer-container">
+      <p>&copy; 2026 Puppireddy Vishwateja. Built in accordance with Scandinavian accessibility standards.</p>
     </div>
   </footer>
 
