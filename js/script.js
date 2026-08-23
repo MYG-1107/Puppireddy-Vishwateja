@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Theme Switcher Logic
+  // Theme Toggle Mechanism
   const themeToggle = document.getElementById('theme-toggle');
   const savedTheme = localStorage.getItem('theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
@@ -13,25 +13,24 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.textContent = newTheme === 'dark' ? '☀️' : '🌙';
   });
 
-  // 2. Mobile Menu Toggle
+  // Mobile Navigation Toggle
   const menuToggle = document.getElementById('menu-toggle');
   const navMenu = document.getElementById('nav-menu');
 
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-  });
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
 
-  // 3. Contact Form Handling
-  const contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Thank you for reaching out, Puppireddy Vishwateja will respond shortly.');
-      contactForm.reset();
+    // Close mobile menu on nav link click
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
     });
   }
 
-  // 4. Excel Resume Export Trigger
+  // Export Resume Action Trigger
   const exportBtn = document.getElementById('export-resume-btn');
   if (exportBtn && typeof exportProfileDataToExcel === 'function') {
     exportBtn.addEventListener('click', exportProfileDataToExcel);
