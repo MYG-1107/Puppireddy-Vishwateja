@@ -1,46 +1,47 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Theme Switcher Logic without Emojis
-  const themeToggle = document.getElementById('theme-toggle');
+  // Theme Toggle Functionality
+  const themeToggleBtn = document.getElementById('theme-toggle');
   const themeText = document.getElementById('theme-text');
-  
-  const savedTheme = localStorage.getItem('theme') || 'light';
-  document.documentElement.setAttribute('data-theme', savedTheme);
-  
-  if (themeText) {
-    themeText.textContent = savedTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+  const htmlElement = document.documentElement;
+
+  // Load saved preference or system default
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    htmlElement.setAttribute('data-theme', savedTheme);
+    updateToggleText(savedTheme);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    htmlElement.setAttribute('data-theme', dark);
+    updateToggleText('dark');
   }
 
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-      if (themeText) {
-        themeText.textContent = newTheme === 'dark' ? 'Light Mode' : 'Dark Mode';
+  themeToggleBtn.addEventListener('click', () => {
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    htmlElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateToggleText(newTheme);
+  });
+
+  function updateToggleText(theme) {
+    themeText.textContent = theme === 'dark' ? 'Light Mode' : 'Dark Mode';
+  }
+
+  // Mobile Navigation Menu Toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const navWrapper = document.getElementById('nav-wrapper');
+
+  menuToggle.addEventListener('click', () => {
+    navWrapper.classList.toggle('active');
+  });
+
+  // Close Mobile Menu on Link Click
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (navWrapper.classList.contains('active')) {
+        navWrapper.classList.remove('active');
       }
     });
-  }
-
-  // Mobile Menu Toggle
-  const menuToggle = document.getElementById('menu-toggle');
-  const navMenu = document.getElementById('nav-menu');
-
-  if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-      });
-    });
-  }
-
-  // Export Resume Action Trigger
-  const exportBtn = document.getElementById('export-resume-btn');
-  if (exportBtn && typeof exportProfileDataToExcel === 'function') {
-    exportBtn.addEventListener('click', exportProfileDataToExcel);
-  }
+  });
 });
