@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vishwatejapuppireddy.github.io/sitemap.xml
+# Sitemap Location
+Sitemap: https://myg-1107.github.io/Puppireddy-Vishwateja/sitemap.xml
